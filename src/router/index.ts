@@ -7,12 +7,12 @@ const routes: Array<RouteRecordRaw> = [
     {
         path: '/', //根路由 (用於巢狀路由)
         children: [
-            {
-                path: '/',
-                name: 'home',
-                component: () => import('../views/pages/home/Home.vue'),
-                // ../views/pages/home/Home.vue
-            },
+            // {
+            //     path: '/',
+            //     name: 'home',
+            //     component: () => import('../views/pages/home/Home.vue'),
+            //     ../views/pages/home/Home.vue
+            // },
             // {
             //     path: '/experience',
             //     name: 'experience',
@@ -36,7 +36,7 @@ const router = createRouter({
 });
 
 //每次路由變更前執行
-router.beforeEach(async (to, from, next) => {
+router.beforeEach((to, from, next) => {
     next();
 });
 
