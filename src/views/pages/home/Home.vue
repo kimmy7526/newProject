@@ -1,7 +1,5 @@
 <template>
-    <div>
-        <h1>Home</h1>
+    <div class="h-screen flex items-center">
+        <span> 採用技術、自介、技術</span>
     </div>
 </template>
-
-

@@ -1,7 +1,8 @@
 <template>
-    <div class="fixed w-full z-1 h-20">
+    <div>
         <Header></Header>
     </div>
+    <RouterView/>
     <div class="bg-[url('public/images/pexels-steve-johnson-858076.jpg')] bg-fixed bg-center bg-cover p-5">
         <Footer></Footer>
     </div>
