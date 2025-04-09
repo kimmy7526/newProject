@@ -5,7 +5,3 @@ import Layout from './layouts/Layout.vue';
 <template>
 <Layout></Layout>
 </template>
-
-<style>
- /* @use "assets/scss/style";  */
-</style>

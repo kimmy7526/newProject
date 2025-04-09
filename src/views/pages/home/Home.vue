@@ -180,7 +180,7 @@ const onScroll = debounce(() => {
     checkAboutMePosition();
     checkSkillsPosition();
     checkUseSkillsPosition();
-}, 500);
+}, 300);
 
 onMounted(() => {
     setTimeout(() => {
