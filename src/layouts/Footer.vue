@@ -1,6 +1,7 @@
 <template>
-    <div class="bg-[url('/images/background.png')] bg-fixed bg-cover p-8">
-        <div class="backdrop-blur-md bg-white/0 text-white">
+    <!-- bg-[url('/images/background.png')]bg-fixed bg-cover-->
+    <div class="bg-gradient-to-r from-black/90 to-blue-900 p-8">
+        <div class="backdrop-blur-lg bg-white/10 text-white">
             <h3 class="text-center pt-4">聯絡</h3>
             <div class="flex flex-col gap-4 md:flex-row justify-around p-8">
                 <!-- left -->
