@@ -1,7 +1,17 @@
 <template>
+  <div class="text-white">
+    <!-- 工作經驗 -->
     <div>
-        <h1>Experience</h1>
+      <WorkExperience />
     </div>
+    <!-- 其他 -->
+    <div>
+      <OtherExperience />
+    </div>
+  </div>
 </template>
 
-
+<script setup>
+import WorkExperience from "./workExperience/WorkExperience.vue";
+import OtherExperience from "./otherExperience/OtherExperience.vue";
+</script>
