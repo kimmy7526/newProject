@@ -69,7 +69,7 @@
                     <span class="badge">Vue3.js</span>
                     <span class="badge">JavaScript</span>
                     <span class="badge">TypeScript</span>
-                    <span class="badge">Bootstrap 5</span>
+                    <span class="badge">Bootstrap5</span>
                     <span class="badge">Tailwind CSS</span>
                 </div>
             </div>

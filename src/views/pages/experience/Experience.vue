@@ -6,7 +6,7 @@
     </div>
     <!-- 其他 -->
     <div>
-      <OtherExperience />
+      <!-- <OtherExperience /> -->
     </div>
   </div>
 </template>
