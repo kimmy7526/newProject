@@ -131,14 +131,14 @@ const isSlideRight = ref(false);
 const isSlideLeft = ref(false);
 let triggerPoint = 0;
 
-function debounce(fn, delay) {
-    let timer = null;
+function throttle(fn, delay) {
+    let lastTime = 0;
     return function (...args) {
-        clearTimeout(timer);
-        timer = setTimeout(() => {
-            // 用來保證函數 fn 的 this 上下文以及參數正確傳遞
-            fn.apply(this, args)
-        }, delay)
+        const now = new Date().getTime();
+        if (now - lastTime >= delay) {
+            lastTime = now; // 更新
+            fn.apply(this, args);
+        }
     }
 }
 
@@ -176,7 +176,7 @@ const checkUseSkillsPosition = () => {
     }
 };
 
-const onScroll = debounce(() => {
+const onScroll = throttle(() => {
     checkAboutMePosition();
     checkSkillsPosition();
     checkUseSkillsPosition();
